@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize-dist.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/frequentQuestions.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+  <script src="js/card_animation.js" defer></script>
+  <script src="js/accordion_trigger.js" defer></script>
+  <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="assets/artificial_intelligence.svg" alt="logo.svg">
+      <ul class="nav__list">
+        <li class="nav__list_item"><a href="#welcome">Inicio</a></li>
+        <li class="nav__list_item"><a href="#about">Nosotros</a></li>
+        <li class="nav__list_item"><a href="#services">Servicios</a></li>
+        <li class="nav__list_item"><a href="#contact">Contacto</a></li>
+      </ul>
+      <span class="btn_menu">MENU</span>
+    </nav>
+  </header>
+  <main>
+    <div id="welcome" class="welcome">
+      <div class="welcome__text">
+        <h1 data-text="title">Inteligencia Artificial <br>para hacer tu vida más fácil</h1>
+        <p data-text="text">
+          La Inteligencia Artificial (IA) está revolucionando nuestra vida cotidiana al hacerla más cómoda y sencilla. Desde el control de los electrodomésticos mediante comandos de voz o desde nuestros dispositivos móviles, hasta el aprendizaje de nuestras preferencias, ahorro de tiempo y energía, mejora de la seguridad, y una vida más eficiente y segura. Simplifica tu vida con IA.
+        </p>
+      </div>
+      <img class="welcome__img" src="assets/welcome.png" alt="">
+
+    </div>
+
+    <div class="content__about">
+      <div id="about" class="about">
+        <img class="about_img" src="assets/about.png" alt="">
+        <div class="about__text">
+          <h1 class="title" data-text="title">Sobre Nosotros</h1>
+          <p class="text" data-text="text">
+            Nuestro proyecto se dedica a aplicar la Inteligencia Artificial para mejorar la calidad de vida de las personas en su día a día. A través de soluciones innovadoras, buscamos simplificar tareas, incrementar la eficiencia y crear hogares más inteligentes.
+          </p>
+          <p class="text" data-text="text">
+            Nos apasiona explorar las posibilidades de la IA y ponerlas al alcance de todos, ya sean empresas, individuos, estudiantes o profesionales. Nuestro compromiso es ofrecer productos y servicios que transformen positivamente la forma en que vivimos, trabajamos y nos relacionamos con nuestros hogares
+          </p>
+          <p class="text" data-text="text">
+            Estamos dedicados a impulsar la innovación y brindar una experiencia excepcional a nuestros clientes, al tiempo que promovemos un futuro más inteligente y conectado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__services">
+      <div id="services" class="services">
+        <div class="services__text">
+          <h1 class="title" data-text="title">Nuestras excelentes soluciones de IA</h1>
+          <p class="text" data-text="text">
+            Ofrecemos soluciones innovadoras que se adaptan a las necesidades de empresas, personas, estudiantes y profesionales
+          </p>
+          <p class="text" data-text="text">
+            Trabajamos constantemente para estar a la vanguardia de la tecnología de IA y ofrecerte soluciones cada vez más avanzadas y eficaces.
+          </p>
+        </div>
+        <ul class="list_services">
+          <li class="list_services__item">
+            <img data-services="img" src="assets/artificial_intelligence.svg" alt="">
+            <h2 data-services-text="title">Automatización robótica</h2>
+            <span data-services-text="text">
+              Transformando procesos para optimizar la eficiencia y potenciar la innovación
+            </span>
+
+          </li>
+          <li class="list_services__item">
+            <img data-services="img" src="assets/artificial_intelligence.svg" alt="">
+            <h2 data-services-text="title">Educación y ciencia</h2>
+            <span data-services-text="text">Impulsando el conocimiento y la innovación para un futuro mejor</span>
+          </li>
+          <li class="list_services__item">
+            <img data-services="img" src="assets/artificial_intelligence.svg" alt="">
+            <h2 data-services-text="title">Aprendizaje automático</h2>
+            <span data-services-text="text">
+              Capacitando a las máquinas para aprender y tomar decisiones inteligentes
+            </span>
+          </li>
+          <li class="list_services__item">
+            <img data-services="img" src="assets/artificial_intelligence.svg" alt="">
+            <h2 data-services-text="title">Análisis predictivo</h2>
+            <span data-services-text="text">
+              Utilizando datos para anticipar resultados y tomar decisiones informadas.
+            </span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="content__frequentQuestions">
+      <div class="frequentQuestions">
+        <h1 data-frequentQuestions-text="title">Preguntas frecuentes</h1>
+        <ul class="frequentQuestion__list">
+          <li>
+            <ul class="frequentQuestion__list_first">
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿Que es la Inteligencia Artificial?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">La Inteligencia Artificial (IA) se refiere a la capacidad de las máquinas o sistemas informáticos para imitar o simular la inteligencia humana. Consiste en desarrollar programas o algoritmos que pueden realizar tareas que normalmente requieren de la inteligencia humana, como el razonamiento, el aprendizaje, la percepción visual o auditiva, la comprensión del lenguaje natural, la toma de decisiones y la resolución de problemas.</p>
+              </li>
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿En qué consiste la automatización?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">La automatización se refiere al uso de tecnología y sistemas para realizar tareas o procesos de manera automática, sin intervención humana directa. Consiste en la aplicación de herramientas y sistemas que pueden ejecutar tareas o funciones de manera programada y repetitiva, reduciendo o eliminando la necesidad de la intervención manual en esos procesos.</p>
+              </li>
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿Qué es la domótica?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">La domótica es un término que proviene de la combinación de las palabras "domus" (casa en latín) y "robótica". Se refiere a la aplicación de la tecnología y la automatización en el hogar para mejorar la calidad de vida, la comodidad, la seguridad y la eficiencia energética.</p>
+              </li>
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿Qué es la Inmótica?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">La Inmótica es un término relacionado con la automatización de edificios o inmuebles comerciales. También conocida como automatización de edificios, se refiere a la aplicación de tecnología y sistemas inteligentes para la gestión y control de diferentes sistemas y servicios dentro de un edificio, como la iluminación, climatización, seguridad, comunicaciones, energía, entre otros.</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿El aprendizaje automático en las IAs?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">El aprendizaje automático es una parte fascinante de la inteligencia artificial que permite a las máquinas aprender y mejorar por sí mismas a través de la experiencia. En lugar de darles instrucciones detalladas, les proporcionamos ejemplos y datos para que encuentren patrones y tomen decisiones inteligentes.</p>
+              </li>
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿La inteligencia artificial en la educación?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">La inteligencia artificial (IA) tiene un gran potencial para transformar la educación, ofreciendo una serie de beneficios significativos. En primer lugar, la IA permite personalizar el aprendizaje de cada estudiante al adaptarse a sus necesidades individuales, ritmo de aprendizaje y estilo de aprendizaje preferido. Esto significa que los estudiantes pueden recibir contenido y actividades educativas que sean relevantes y desafiantes para ellos, lo que mejora su compromiso y motivación.</p>
+              </li>
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿Cuáles son los beneficios de la Domótica?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">La domótica, o automatización del hogar, ofrece una serie de beneficios significativos. Permite la conveniencia al controlar y gestionar dispositivos desde un dispositivo móvil o mediante comandos de voz. También promueve el ahorro de energía al monitorear y controlar eficientemente el consumo de energía. Mejora la seguridad al supervisar y controlar sistemas de seguridad y proporciona una gestión eficiente del hogar al automatizar tareas repetitivas. Además, ofrece accesibilidad y adaptabilidad para personas con movilidad reducida.</p>
+              </li>
+              <li class="frequentQuestion__item">
+                <div data-frequentQuestions-text="content" class="accordion-trigger">
+                  <h2 data-frequentQuestions-text="subTitle">
+                    ¿Cuáles son los beneficios de la Inmótica?
+                  </h2>
+                  <img data-frequentQuestions-img="img" src="down_icon.svg
+              " alt="" class="accordion-image">
+                </div>
+                <p data-frequentQuestions-text="text" class="accordion-content">La Inmótica, o automatización de edificios inteligentes, ofrece una serie de beneficios en el control y gestión de edificios. Contribuye a la eficiencia energética al permitir el control centralizado de sistemas como la iluminación y climatización, optimizando su consumo. Además, mejora el confort y bienestar de los ocupantes al personalizar el entorno según sus preferencias. La Inmótica también garantiza la seguridad del edificio mediante la integración de sistemas de seguridad y facilita el mantenimiento predictivo al monitorear el estado de los equipos.</p>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    </div>
+
+
+  </main>
+  <footer>
+    <div class="content__contact">
+      <div id="contact" class="contact">
+        <div class="contact__list">
+          <img data-contact-img="img" src="assets/artificial_intelligence.svg" alt="">
+          <p data-contact="text">
+            Descubre cómo la Inteligencia Artificial está transformando el mundo y simplificando la vida cotidiana. Explora nuestras soluciones innovadoras y únete a la revolución de la IA
+          </p>
+        </div>
+        <div>
+          <h1 data-contact="title">Ponte en contacto</h1>
+          <ul class="contact__list">
+            <li class="contact__item">Av. Andres A. Cáceres s/n 18001 Samegua, Peru</li>
+            <li class="contact__item">+51 000 000 000</li>
+            <li class="contact__item">info@example.edu.pe</li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

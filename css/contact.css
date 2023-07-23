@@ -1,0 +1,63 @@
+.content__contact{
+  background-color: #14183e;
+}
+
+.contact{
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 50px;
+  height: 450px;
+  background-image: url("footer.png");
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+[data-contact-img="img"]{
+  width: 100px;
+}
+
+[data-contact="title"]{
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+[data-contact="text"]{
+  font-family: "Open Sans", sans-serif;
+  color: #aaaaaa;
+  width: 250px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.contact__list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__item{
+  color: #aaaaaa;
+}
+
+@media (max-width: 720px) {
+  .contact{
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact__list{
+    align-items: center;
+  }
+
+  [data-contact="title"]{
+    text-align: center;
+  }
+}
